@@ -9,8 +9,12 @@
 import Foundation
 
 struct Town{
-    let region = "South"
-    var population = 5_422
+    static let region = "South"
+    var population = 5_422 {
+        didSet(oldPopulation){
+            print("The population has changed to \(population) from \(oldPopulation)")
+        }
+    }
     var numberOfStoplights = 4
     
     enum Size{
@@ -19,14 +23,14 @@ struct Town{
         case large
     }
     
-    lazy var townSize: Size = {
+    var townSize: Size  {
         switch self.population {
         case 0...10_000:
             return Size.small
         case 10_000...100_000:
             return Size.medium
         default:
-            Size.large
+            return Size.large
         }
     }
     
