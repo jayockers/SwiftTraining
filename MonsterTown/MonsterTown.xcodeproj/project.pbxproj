@@ -11,6 +11,7 @@
 		23129FB32083AD9400DA0FE3 /* Town.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23129FB22083AD9400DA0FE3 /* Town.swift */; };
 		23129FB52083AFEA00DA0FE3 /* Monster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23129FB42083AFEA00DA0FE3 /* Monster.swift */; };
 		23129FB72083B0CB00DA0FE3 /* Zombie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23129FB62083B0CB00DA0FE3 /* Zombie.swift */; };
+		23FCCE2520840F4100426CA8 /* MonsterTownTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FCCE2420840F4100426CA8 /* MonsterTownTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,10 +32,20 @@
 		23129FB22083AD9400DA0FE3 /* Town.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Town.swift; sourceTree = "<group>"; };
 		23129FB42083AFEA00DA0FE3 /* Monster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Monster.swift; sourceTree = "<group>"; };
 		23129FB62083B0CB00DA0FE3 /* Zombie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Zombie.swift; sourceTree = "<group>"; };
+		23FCCE2220840F4100426CA8 /* MonsterTownTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MonsterTownTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		23FCCE2420840F4100426CA8 /* MonsterTownTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonsterTownTests.swift; sourceTree = "<group>"; };
+		23FCCE2620840F4100426CA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		23129FA52083AB7200DA0FE3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23FCCE1F20840F4100426CA8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -48,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				23129FAA2083AB7200DA0FE3 /* MonsterTown */,
+				23FCCE2320840F4100426CA8 /* MonsterTownTests */,
 				23129FA92083AB7200DA0FE3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -56,6 +68,7 @@
 			isa = PBXGroup;
 			children = (
 				23129FA82083AB7200DA0FE3 /* MonsterTown */,
+				23FCCE2220840F4100426CA8 /* MonsterTownTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -69,6 +82,15 @@
 				23129FB62083B0CB00DA0FE3 /* Zombie.swift */,
 			);
 			path = MonsterTown;
+			sourceTree = "<group>";
+		};
+		23FCCE2320840F4100426CA8 /* MonsterTownTests */ = {
+			isa = PBXGroup;
+			children = (
+				23FCCE2420840F4100426CA8 /* MonsterTownTests.swift */,
+				23FCCE2620840F4100426CA8 /* Info.plist */,
+			);
+			path = MonsterTownTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -91,6 +113,23 @@
 			productReference = 23129FA82083AB7200DA0FE3 /* MonsterTown */;
 			productType = "com.apple.product-type.tool";
 		};
+		23FCCE2120840F4100426CA8 /* MonsterTownTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 23FCCE2720840F4100426CA8 /* Build configuration list for PBXNativeTarget "MonsterTownTests" */;
+			buildPhases = (
+				23FCCE1E20840F4100426CA8 /* Sources */,
+				23FCCE1F20840F4100426CA8 /* Frameworks */,
+				23FCCE2020840F4100426CA8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MonsterTownTests;
+			productName = MonsterTownTests;
+			productReference = 23FCCE2220840F4100426CA8 /* MonsterTownTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -102,6 +141,10 @@
 				ORGANIZATIONNAME = BigNerdRanch;
 				TargetAttributes = {
 					23129FA72083AB7200DA0FE3 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					23FCCE2120840F4100426CA8 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 					};
@@ -120,9 +163,20 @@
 			projectRoot = "";
 			targets = (
 				23129FA72083AB7200DA0FE3 /* MonsterTown */,
+				23FCCE2120840F4100426CA8 /* MonsterTownTests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		23FCCE2020840F4100426CA8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		23129FA42083AB7200DA0FE3 /* Sources */ = {
@@ -133,6 +187,14 @@
 				23129FB72083B0CB00DA0FE3 /* Zombie.swift in Sources */,
 				23129FB52083AFEA00DA0FE3 /* Monster.swift in Sources */,
 				23129FB32083AD9400DA0FE3 /* Town.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23FCCE1E20840F4100426CA8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23FCCE2520840F4100426CA8 /* MonsterTownTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +325,32 @@
 			};
 			name = Release;
 		};
+		23FCCE2820840F4100426CA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = MonsterTownTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.BigNerdRanch.MonsterTownTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		23FCCE2920840F4100426CA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = MonsterTownTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.BigNerdRanch.MonsterTownTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -280,6 +368,15 @@
 			buildConfigurations = (
 				23129FB02083AB7200DA0FE3 /* Debug */,
 				23129FB12083AB7200DA0FE3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		23FCCE2720840F4100426CA8 /* Build configuration list for PBXNativeTarget "MonsterTownTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23FCCE2820840F4100426CA8 /* Debug */,
+				23FCCE2920840F4100426CA8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
