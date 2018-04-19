@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BFh-lc-1vF">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="hmM-nh-nAO">
+            <objects>
+                <viewController id="BFh-lc-1vF" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="H5W-rx-LzE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="pqv-W5-IwM">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            </mapView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="YyG-hh-qKH" userLabel="Segments">
+                                <rect key="frame" x="16" y="40" width="343" height="29"/>
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Second"/>
+                                </segments>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="YyG-hh-qKH" firstAttribute="top" secondItem="j0H-nL-di6" secondAttribute="top" constant="20" id="80r-Nf-eSV"/>
+                            <constraint firstItem="j0H-nL-di6" firstAttribute="bottom" secondItem="pqv-W5-IwM" secondAttribute="bottom" id="L6t-jj-6NG"/>
+                            <constraint firstItem="pqv-W5-IwM" firstAttribute="leading" secondItem="j0H-nL-di6" secondAttribute="leading" id="Lq7-qG-uBP"/>
+                            <constraint firstItem="j0H-nL-di6" firstAttribute="trailing" secondItem="YyG-hh-qKH" secondAttribute="trailing" constant="16" id="ay5-bB-XYU"/>
+                            <constraint firstItem="YyG-hh-qKH" firstAttribute="leading" secondItem="j0H-nL-di6" secondAttribute="leading" constant="16" id="gYp-o0-BM9"/>
+                            <constraint firstItem="pqv-W5-IwM" firstAttribute="top" secondItem="j0H-nL-di6" secondAttribute="top" id="h9l-ku-i8k"/>
+                            <constraint firstItem="j0H-nL-di6" firstAttribute="trailing" secondItem="pqv-W5-IwM" secondAttribute="trailing" id="jh3-tM-wDl"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="j0H-nL-di6"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5VA-33-eXR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="311.19999999999999" y="214.54272863568218"/>
+        </scene>
+    </scenes>
+</document>

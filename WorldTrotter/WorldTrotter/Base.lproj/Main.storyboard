@@ -29,25 +29,25 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="dhA-EZ-9wB"/>
                                 </connections>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="degrees Fahrenheit" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YGt-Ub-KAW">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="degrees Fahrenheit" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YGt-Ub-KAW">
                                 <rect key="frame" x="39.5" y="124" width="296" height="43"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="is really" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hol-LJ-72V">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="is really" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hol-LJ-72V">
                                 <rect key="frame" x="130.5" y="175" width="114" height="43"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BU5-ZB-Hg7">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BU5-ZB-Hg7">
                                 <rect key="frame" x="128.5" y="226" width="117" height="84"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="70"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="degrees Celsius" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gqq-dx-bjj">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="degrees Celsius" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gqq-dx-bjj">
                                 <rect key="frame" x="64.5" y="318" width="246" height="43"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                 <nil key="textColor"/>
@@ -57,16 +57,24 @@
                         <color key="backgroundColor" red="0.96078431372549022" green="0.95686274509803915" blue="0.94509803921568625" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="BU5-ZB-Hg7" secondAttribute="trailing" id="7eB-8V-wk9"/>
                             <constraint firstItem="Hol-LJ-72V" firstAttribute="centerX" secondItem="YGt-Ub-KAW" secondAttribute="centerX" id="8jQ-u2-iDg"/>
+                            <constraint firstItem="BU5-ZB-Hg7" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="HfV-cM-2Vu"/>
+                            <constraint firstItem="Hol-LJ-72V" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="LPX-kO-AP0"/>
                             <constraint firstItem="BU5-ZB-Hg7" firstAttribute="centerX" secondItem="YGt-Ub-KAW" secondAttribute="centerX" id="N1S-Jh-ifQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Gqq-dx-bjj" secondAttribute="trailing" id="Nv5-oF-QzN"/>
                             <constraint firstItem="lcW-HO-go3" firstAttribute="centerX" secondItem="YGt-Ub-KAW" secondAttribute="centerX" id="O8d-3i-84v"/>
                             <constraint firstItem="YGt-Ub-KAW" firstAttribute="top" secondItem="lcW-HO-go3" secondAttribute="bottom" constant="8" id="Pfd-hL-qEb"/>
                             <constraint firstItem="lcW-HO-go3" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="8" id="SPJ-Xi-diF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Hol-LJ-72V" secondAttribute="trailing" id="bZc-A3-WnU"/>
                             <constraint firstItem="Gqq-dx-bjj" firstAttribute="centerX" secondItem="YGt-Ub-KAW" secondAttribute="centerX" id="f6T-Xz-arX"/>
                             <constraint firstItem="lcW-HO-go3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hgr-rh-4Gz"/>
+                            <constraint firstItem="YGt-Ub-KAW" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="iK1-H7-shV"/>
                             <constraint firstItem="Gqq-dx-bjj" firstAttribute="top" secondItem="BU5-ZB-Hg7" secondAttribute="bottom" constant="8" id="jPH-DS-aFE"/>
                             <constraint firstItem="Hol-LJ-72V" firstAttribute="top" secondItem="YGt-Ub-KAW" secondAttribute="bottom" constant="8" id="pB9-rL-WHY"/>
+                            <constraint firstItem="Gqq-dx-bjj" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="vKp-KZ-apb"/>
                             <constraint firstItem="BU5-ZB-Hg7" firstAttribute="top" secondItem="Hol-LJ-72V" secondAttribute="bottom" constant="8" id="w3B-bf-H68"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="YGt-Ub-KAW" secondAttribute="trailing" id="yCp-Ki-4bw"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <connections>
@@ -92,10 +100,6 @@
         <scene sceneID="6U7-8t-6uz">
             <objects>
                 <viewController title="Map" id="VoS-CF-98J" customClass="MapViewController" customModule="WorldTrotter" customModuleProvider="target" sceneMemberID="viewController">
-                    <mapView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" id="L8d-Mk-4S0">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    </mapView>
                     <tabBarItem key="tabBarItem" title="Map" image="MapIcon" selectedImage="MapIcon" id="ew6-Ij-aiJ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YFs-Ht-iLu" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -108,6 +112,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="u04-Ry-wf9" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="U8R-Pb-N9N">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
